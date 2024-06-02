@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import './../styles/App.css';
 
@@ -10,8 +9,8 @@ const App = () => {
       const response = fetch("https://reqres.in/api/users");
       const data = await response.json();
       setData(data.data);
-    } catch (error) {
-      
+    } 
+    catch (error) {  
     }
   }
 
