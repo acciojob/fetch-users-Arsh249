@@ -6,9 +6,11 @@ const App = () => {
 
   const fetchUser = async () => {
     try {
+
       const response = fetch("https://reqres.in/api/users");
       const data = await response.json();
       setData(data.data);
+      
     } 
     catch (error) {  
     }
