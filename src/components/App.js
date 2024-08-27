@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '@babel/polyfill';
 import './../styles/App.css';
 import axios from 'axios';
 
@@ -48,7 +49,7 @@ const App = () => {
           </tbody>
         </table>
       ) : (
-        !loading && <p>No users available. Click "Get User List" to fetch users.</p>
+        !loading && <p>No data found</p>
       )}
     </div>
   );
