@@ -49,7 +49,7 @@ const App = () => {
           </tbody>
         </table>
       ) : (
-        !loading && <p>No data found</p>
+        !loading && <table>No data found</table>
       )}
     </div>
   );
